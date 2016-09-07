@@ -9,74 +9,52 @@ public class StringAPIChallenges
 //		String pluralWord = word.nextLine();
 //		String result = (pluralWord.endsWith("s")) ? "That's plural!" : "That's not plural.";
 //		System.out.println(result);
-//		
-//		int counter = 0;
-//		Scanner word2 = new Scanner(System.in);
-//		System.out.println("Please input another word.");
-//		String wordVowels = word2.nextLine();
-//		int counter = 0;
-//		switch(wordVowels)
-//			{
-//			case "a":
-//				{
-//				System.out.println(wordVowels.indexOf("a"));
-//				}
-//			case "e":
-//				{
-//				wordVowels.indexOf("e");
-//				counter++;
-//				}
-//			case "i":
-//				{
-//				wordVowels.indexOf("i");
-//				counter++;
-//				}
-//			case "o":
-//				{
-//				wordVowels.indexOf("o");
-//				counter++;
-//				}
-//			case "u":
-//				{
-//				wordVowels.indexOf("u");
-//				counter++;
-//				}
-//			System.out.println(counter);
-//			}
-//		for(int i=0; i<wordVowels.length(); i++)
-//			{
-//			
-//			}
-//		
-//		if(wordVowels)
-		Scanner word3 = new Scanner(System.in);
-		System.out.println("Please input your full name.");
-		String fullName = word3.nextLine();
-		for(int i=0; i<fullName.length(); i++)
+			
+		Scanner word2 = new Scanner(System.in);
+		System.out.println("Please input another word.");
+		String wordVowels = word2.nextLine();
+		int sum = 0;
+		for(int i=0; i<wordVowels.length(); i++)
 			{
-			switch(fullName.indexOf(i))
+			switch(wordVowels.substring(i, i + 1))
 				{
 				case "a":
 					{
-					fullName.lastIndexOf(fullName.indexOf("a"));
+					sum += i;		
+					break;
 					}
 				case "e":					
 					{					
-					fullName.lastIndexOf(fullName.indexOf("e"));				
+					sum += i;	
+					break;
 					}
 				case "i":
 					{
-					fullName.lastIndexOf(fullName.indexOf("i"));				
+					sum += i;	
+					break;
 					}
 				case "o":
 					{
-					fullName.lastIndexOf(fullName.indexOf("o"));				
+					sum += i;	
+					break;
 					}
 				case "u":
 					{
-					fullName.lastIndexOf(fullName.indexOf("u"));				
+					sum += i;	
+					break;
 					}
+					
 				}
+	
 			}
+		
+		System.out.println(sum);
+//		Make method	
+//		Scanner word3 = new Scanner(System.in);
+//		System.out.println("Please input your full name.");
+//		String fullName = word3.nextLine();
+		
+
+		
 		}
 	}
